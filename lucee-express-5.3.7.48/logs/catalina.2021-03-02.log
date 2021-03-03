@@ -1,0 +1,45 @@
+02-Mar-2021 17:59:52.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.11
+02-Mar-2021 17:59:52.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 11 2018 19:47:23 UTC
+02-Mar-2021 17:59:52.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.11.0
+02-Mar-2021 17:59:52.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Shane\Desktop\lucee-express-5.3.7.48
+02-Mar-2021 17:59:52.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Shane\Desktop\lucee-express-5.3.7.48
+02-Mar-2021 17:59:52.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Mar-2021 17:59:52.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-Mar-2021 17:59:52.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Mar-2021 17:59:52.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/Shane/Desktop/lucee-express-5.3.7.48/conf/logging.properties
+02-Mar-2021 17:59:52.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Mar-2021 17:59:52.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-Mar-2021 17:59:52.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Mar-2021 17:59:52.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Mar-2021 17:59:52.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-Mar-2021 17:59:52.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/Shane/Desktop/lucee-express-5.3.7.48
+02-Mar-2021 17:59:52.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/Shane/Desktop/lucee-express-5.3.7.48
+02-Mar-2021 17:59:52.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/Shane/Desktop/lucee-express-5.3.7.48/temp
+02-Mar-2021 17:59:52.119 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-14.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Shane\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Shane\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\Oculus\Support\oculus-runtime;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\NODE;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet;C:\Users\Shane\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\Shane\AppData\Local\Programs\Python\Python38-32;C:\Users\Shane\AppData\Local\Microsoft\WindowsApps;E:\Users\Shane\Microsoft VS Code\bin;C:\Users\Shane\AppData\Roaming\npm;C:\Users\Shane\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\bin;C:\Program Files\heroku\bin;C:\Users\Shane\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pip;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+02-Mar-2021 17:59:52.162 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8888"]
+02-Mar-2021 17:59:52.228 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Mar-2021 17:59:52.235 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Mar-2021 17:59:52.237 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Mar-2021 17:59:52.237 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 477 ms
+02-Mar-2021 17:59:52.275 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-Mar-2021 17:59:52.275 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.11
+02-Mar-2021 17:59:52.285 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Shane\Desktop\lucee-express-5.3.7.48\webapps\ROOT]
+02-Mar-2021 17:59:52.781 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-Mar-2021 17:59:59.592 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Shane\Desktop\lucee-express-5.3.7.48\webapps\ROOT] has finished in [7,306] ms
+02-Mar-2021 17:59:59.594 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8888"]
+02-Mar-2021 17:59:59.604 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Mar-2021 17:59:59.606 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7368 ms
+02-Mar-2021 18:08:08.760 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+02-Mar-2021 18:08:08.761 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8888"]
+02-Mar-2021 18:08:08.821 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+02-Mar-2021 18:08:08.882 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-Mar-2021 18:08:14.278 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8888"]
+02-Mar-2021 18:08:14.279 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+02-Mar-2021 18:08:14.280 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8888"]
+02-Mar-2021 18:08:14.281 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

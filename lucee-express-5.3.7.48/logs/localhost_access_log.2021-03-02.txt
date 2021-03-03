@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET / HTTP/1.1" 200 7620
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/css/core/_ed07b761.core.min.css HTTP/1.1" 200 13266
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/css/lib/bootstrap.min.css HTTP/1.1" 200 43855
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/js/lib/bootstrap.min.js HTTP/1.1" 200 5145
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/js/lib/jquery-1.10.1.min.js HTTP/1.1" 200 93064
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/js/core/_38444bee.core.min.js HTTP/1.1" 200 280
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/js/lib/SmoothScroll.js HTTP/1.1" 200 14450
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/img-new.png HTTP/1.1" 200 12660
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/lucee-logo.png HTTP/1.1" 200 53721
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/img-first-steps.png HTTP/1.1" 200 13497
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/img-code.png HTTP/1.1" 200 8848
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/img-exclamation-mark.png HTTP/1.1" 200 6455
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/banner-bg.png HTTP/1.1" 200 161927
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:31 -0800] "GET /assets/img/ico-sprite.png HTTP/1.1" 200 2125
+0:0:0:0:0:0:0:1 - - [02/Mar/2021:18:00:32 -0800] "GET /favicon.ico HTTP/1.1" 200 99678

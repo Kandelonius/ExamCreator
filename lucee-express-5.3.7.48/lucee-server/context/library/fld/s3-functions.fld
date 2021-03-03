@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE func-lib PUBLIC "-//Railo//DTD CFML Function Library 1.0//EN"
+	"dtd/web-cfmfunctionlibrary_1_0.dtd">
+<!-- http://www.getrailo.com/j2ee/dtd/web-jspfunctionlibrary_1_0.dtd -->
+<func-lib>
+	<flib-version>1.00</flib-version>
+	<short-name>S3</short-name>
+	<uri>http://extension.lucee.org/function/s3</uri>
+	<display-name>PDF</display-name>
+	<description>
+		Functions to interact with S3 Resource
+	</description>
+
+	<!-- StoreAddACL -->
+	<function>
+		<name>StoreAddACL</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.StoreAddACL</class>
+		<description>Adds ACL to existing ACL for object or bucket.</description>
+		<argument>
+			<name>url</name>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Amazon S3 URL</description>
+	    </argument>
+		<argument>
+			<name>aclObject</name>
+			<alias>acl</alias>
+			<type>object</type>
+			<required>Yes</required>
+			<description>an array of struct where each struct represents an ACL grant</description>
+	    </argument>
+		<return>
+			<type>void</type>
+		</return>
+	</function>
+	<!-- StoreGetACL -->
+	<function>
+		<name>StoreGetACL</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.StoreGetACL</class>
+		<description>returns an array of struct where each struct represents an ACL grant</description>
+		<argument>
+			<name>url</name>
+			<type>string</type>
+				<required>Yes</required>
+			<description>Amazon S3 URL</description>
+	    </argument>
+		<return>
+			<type>Object</type>
+		</return>
+	</function>
+	<!-- StoreSetACL -->
+	<function>
+		<name>StoreSetACL</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.StoreSetACL</class>
+		<description>Sets the ACL for object or bucket.</description>
+		<argument>
+			<name>url</name>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Amazon S3 URL</description>
+	    </argument>
+		<argument>
+			<name>aclObject</name>
+			<alias>acl</alias>
+			<type>object</type>
+			<required>Yes</required>
+			<description>an array of struct where each struct represents an ACL grant</description>
+	    </argument>
+		<return>
+			<type>void</type>
+		</return>
+	</function>
+
+
+	<!-- StoreGetMetaData -->
+	<function>
+		<name>StoreGetMetaData</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.StoreGetMetaData</class>
+        <introduced>5.0.0.000</introduced>
+        <description>Returns the metadata related to the object or bucket.</description>
+		<argument>
+			<name>url</name>
+			<type>string</type>
+				<required>Yes</required>
+			<description>Amazon S3 URL</description>
+	    </argument>
+		<return>
+			<type>struct</type>
+		</return>
+	</function>
+	<!-- StoreSetMetaData -->
+	<function>
+		<name>StoreSetMetaData</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.StoreSetMetaData</class>
+        <introduced>5.0.0.000</introduced>
+		<description>Sets the metadata on bucket or object.</description>
+		<argument>
+			<name>url</name>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Amazon S3 URL</description>
+	    </argument>
+		<argument>
+			<name>metadata</name>
+			<type>struct</type>
+			<required>Yes</required>
+			<description></description>
+	    </argument>
+		<return>
+			<type>void</type>
+		</return>
+	</function>
+	<!-- S3Read -->
+	<function>
+		<name>S3Read</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.S3Read</class>
+		<description>Reads an object from S3 as a string.</description>
+		<argument>
+			<name>bucketName</name>
+			<alias>bucket</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>objectName</name>
+			<alias>object,path</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the object (path) within the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>charset</name>
+			<type>string</type>
+			<required>No</required>
+			<default>UTF-8</default>
+			<description>charset to use to store the content.</description>
+	    </argument>
+		<argument>
+			<name>accessKeyId</name>
+			<alias>accessKey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 accessKeyId, if not defined it checks the system property/enviroment variable for [lucee.s3.accesskeyid].</description>
+	    </argument>
+		<argument>
+			<name>secretAccessKey</name>
+			<alias>secretkey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 secretAccessKey, if not defined it checks the system property/enviroment variable for [lucee.s3.secretaccesskey].</description>
+	    </argument>
+		<argument>
+			<name>timeout</name>
+			<type>number</type>
+			<required>No</required>
+			<default>10000</default>
+			<description>timeout for this execution</description>
+	    </argument>
+		<return>
+			<type>string</type>
+		</return>
+	</function>
+	<!-- S3ReadBinary -->
+	<function>
+		<name>S3ReadBinary</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.S3ReadBinary</class>
+		<description>Reads an object from S3 as a binary.</description>
+		<argument>
+			<name>bucketName</name>
+			<alias>bucket</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>objectName</name>
+			<alias>object,path</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the object (path) within the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>accessKeyId</name>
+			<alias>accessKey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 accessKeyId, if not defined it checks the system property/enviroment variable for [lucee.s3.accesskeyid].</description>
+	    </argument>
+		<argument>
+			<name>secretAccessKey</name>
+			<alias>secretkey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 secretAccessKey, if not defined it checks the system property/enviroment variable for [lucee.s3.secretaccesskey].</description>
+	    </argument>
+		<argument>
+			<name>timeout</name>
+			<type>number</type>
+			<required>No</required>
+			<default>10000</default>
+			<description>timeout for this execution</description>
+	    </argument>
+		<return>
+			<type>binary</type>
+		</return>
+	</function>
+	<!-- S3Write -->
+	<function>
+		<name>S3Write</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.S3Write</class>
+		<description>Writes a value to S3.</description>
+		<argument>
+			<name>bucketName</name>
+			<alias>bucket</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>objectName</name>
+			<alias>object,path</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the object (path) within the bucket of your object to read</description>
+	    </argument>
+		<argument>
+			<name>value</name>
+			<alias>content</alias>
+			<type>object</type>
+			<required>yes</required>
+			<description>value to store on S3.</description>
+	    </argument>
+		<argument>
+			<name>charset</name>
+			<type>string</type>
+			<required>No</required>
+			<default>UTF-8</default>
+			<description>charset to use to store the content.</description>
+	    </argument>
+		<argument>
+			<name>mimeType</name>
+			<type>string</type>
+			<required>No</required>
+			<default>UTF-8</default>
+			<description>MimeType of the value you are storing.</description>
+	    </argument>
+		<argument>
+			<name>acl</name>
+			<alias>aclObject</alias>
+			<type>object</type>
+			<required>No</required>
+			<description>an array of struct where each struct represents an ACL grant</description>
+	    </argument>
+		<argument>
+			<name>location</name>
+			<type>string</type>
+			<required>No</required>
+			<description>location of the S3 storage.</description>
+	    </argument>
+		<argument>
+			<name>accessKeyId</name>
+			<alias>accessKey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 accessKeyId, if not defined it checks the system property/enviroment variable for [lucee.s3.accesskeyid].</description>
+	    </argument>
+		<argument>
+			<name>secretAccessKey</name>
+			<alias>secretkey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 secretAccessKey, if not defined it checks the system property/enviroment variable for [lucee.s3.secretaccesskey].</description>
+	    </argument>
+		<argument>
+			<name>timeout</name>
+			<type>number</type>
+			<required>No</required>
+			<default>10000</default>
+			<description>timeout for this execution</description>
+	    </argument>
+		<return>
+			<type>binary</type>
+		</return>
+	</function>
+
+
+	<!-- S3ListBucket -->
+	<function>
+		<name>S3ListBucket</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.S3ListBucket</class>
+		<description>List all objects in a bucket</description>
+		<argument>
+			<name>bucketName</name>
+			<alias>bucket</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the bucket to list objects from.</description>
+	    </argument>
+		<argument>
+			<name>accessKeyId</name>
+			<alias>accessKey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 accessKeyId, if not defined it checks the system property/enviroment variable for [lucee.s3.accesskeyid].</description>
+	    </argument>
+		<argument>
+			<name>secretAccessKey</name>
+			<alias>secretkey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 secretAccessKey, if not defined it checks the system property/enviroment variable for [lucee.s3.secretaccesskey].</description>
+	    </argument>
+		<argument>
+			<name>timeout</name>
+			<type>number</type>
+			<required>No</required>
+			<default>10000</default>
+			<description>timeout for this execution</description>
+	    </argument>
+		<return>
+			<type>query</type>
+		</return>
+	</function>
+
+
+	<!-- S3ClearBucket -->
+	<function>
+		<name>S3ClearBucket</name>
+		<class bundle-name="s3.extension" bundle-version="0.9.4.124-SNAPSHOT">org.lucee.extension.resource.s3.function.S3ClearBucket</class>
+		<description>Removes all objects from a bucket, unless maxage is set, in that case only objects that are older than maxage are removed.</description>
+		<argument>
+			<name>bucketName</name>
+			<alias>bucket</alias>
+			<type>string</type>
+			<required>Yes</required>
+			<description>Name of the bucket to list objects from.</description>
+	    </argument>
+		<argument>
+			<name>maxage</name>
+			<alias>age</alias>
+			<type>timespan</type>
+			<required>No</required>
+			<description>Max age of the object we keep, if not set all objects are removed.</description>
+	    </argument>
+		<argument>
+			<name>accessKeyId</name>
+			<alias>accessKey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 accessKeyId, if not defined it checks the system property/enviroment variable for [lucee.s3.accesskeyid].</description>
+	    </argument>
+		<argument>
+			<name>secretAccessKey</name>
+			<alias>secretkey</alias>
+			<type>string</type>
+			<required>No</required>
+			<description>S3 secretAccessKey, if not defined it checks the system property/enviroment variable for [lucee.s3.secretaccesskey].</description>
+	    </argument>
+		<argument>
+			<name>timeout</name>
+			<type>number</type>
+			<required>No</required>
+			<default>10000</default>
+			<description>timeout for this execution</description>
+	    </argument>
+		<return>
+			<type>void</type>
+		</return>
+	</function>
+	
+</func-lib>
