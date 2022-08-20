@@ -1,30 +1,33 @@
 import React from "react";
-import Link from'next/link';
+import Link from "next/link";
+import classes from "./EventItem.module.css";
 
 export default function EventItem(props) {
-    const { title, image, date, location, id } = props;
+  const { title, image, date, location, id } = props;
 
-    const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-    });
-    const formattedAddress = location.replace(', ', '\n');
-    const exploreLink = `/events/${id}`;
+  const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const formattedAddress = location.replace(", ", "\n");
+  const exploreLink = `/events/${id}`;
   return (
-    <li>
-      <img src={'/' + image} alt={title} />
-      <div>
-        <h2>{title}</h2>
-        <div>
-          <time>{humanReadableDate}</time>
+    <li className={classes.item}>
+      <img src={"/" + image} alt={title} />
+      <div className={classes.content}>
+        <div className={classes.summary}>
+          <h2>{title}</h2>
+          <div className={classes.date}>
+            <time>{humanReadableDate}</time>
+          </div>
+          <div className={classes.address}>
+            <address>{formattedAddress}</address>
+          </div>
         </div>
-        <div>
-          <address>{formattedAddress}</address>
+        <div className={classes.actions}>
+          <Link href={exploreLink}>Explore Event</Link>
         </div>
-      </div>
-      <div>
-        <Link href={exploreLink}>Explore Event</Link>
       </div>
     </li>
   );
