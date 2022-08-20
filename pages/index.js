@@ -1,9 +1,12 @@
 import React from "react";
+import { getFeaturedEvents } from "../dummy-data";
+import EventList from "../components/events/EventList";
 
 export default function StartingPage() {
+  const featuredEvents = getFeaturedEvents();
   return (
     <div>
-      <h1>Welcome Home</h1>
+      <EventList items={featuredEvents} />
     </div>
   );
 }
